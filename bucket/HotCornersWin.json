@@ -10,6 +10,7 @@
             "hash": "sha256:9f9adb7838ca48f281a04e3f3aab4e536603441596b3b1a6199d2302f88c1d25"
         }
     },
+    "persist": "data",
     "bin": "HotCornersWin.exe",
     "shortcuts": [
         [

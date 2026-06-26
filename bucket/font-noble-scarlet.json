@@ -3,7 +3,7 @@
     "description": "Backup for windows fonts: Noble Scarlet | Windows 字体备份：堕朱砂",
     "homepage": "https://github.com/bgzo-sandbox/noble-scarlet/",
     "url": "https://github.com/bgzo-sandbox/noble-scarlet/releases/download/1.0/noble-scarlet.zip",
-    "hash": "4ada8c9c4358f68625dfb7098e517928e5851f4263302bebfe23a977ba741214",
+    "hash": "ccbd38e40ddf659e38f17605e3e7207bce85647ebb10aa02431e3185b2a43560",
     "installer": {
         "script": [
             "$currentBuildNumber = [int] (Get-ItemProperty \"HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\").CurrentBuildNumber",

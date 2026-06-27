@@ -13,9 +13,12 @@ scoop install hx-scoop/<manifestname>
 
 ## Apps
 
+| Names         | Description                             | Source                                   |
+| ------------- | --------------------------------------- | ---------------------------------------- |
+| HotCornersWin | macOS "hot corners" feature for Windows | https://github.com/flexits/HotCornersWin |
 
-| Names | Description |
-| ------| ------------|
-| HotCornersWin | macOS "hot corners" feature for Windows|
+## Fonts
 
-
+| Names         | Description                                                       | Source                                        |
+| ------------- | ----------------------------------------------------------------- | --------------------------------------------- |
+| Noble Scarlet | Backup for windows fonts: Noble Scarlet, Windows 字体备份：堕朱砂 | https://github.com/bgzo-sandbox/noble-scarlet |

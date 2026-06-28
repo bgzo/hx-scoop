@@ -16,7 +16,28 @@
     },
     "bin": "Easydict.WinUI.exe",
     "shortcuts": [["Easydict.WinUI.exe", "Easydict.WinUI"]],
-    "persist": [["%LOCALAPPDATA%\\Easydict", "data\\Easydict"]],
+    "persist": "data\\Easydict",
+    "installer": {
+        "script": [
+            "$target = \"$env:LOCALAPPDATA\\Easydict\"",
+            "$store = \"$persist_dir\\data\\Easydict\"",
+            "if (Test-Path $target -PathType Container) {",
+            "    $item = Get-Item $target",
+            "    if (!$item.LinkType) {",
+            "        if (!(Test-Path $store)) { New-Item -ItemType Directory -Force $store | Out-Null }",
+            "        Move-Item -Path \"$target\\*\" -Destination $store -Force",
+            "        Remove-Item -Force $target",
+            "    }",
+            "}",
+            "if (!(Test-Path $target)) { New-Item -ItemType Junction -Path $target -Target $store | Out-Null }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$target = \"$env:LOCALAPPDATA\\Easydict\"",
+            "if ((Get-Item $target).LinkType -eq 'Junction') { Remove-Item -Force $target }"
+        ]
+    },
     "checkver": {
         "github": "https://github.com/xiaocang/easydict_win32"
     },

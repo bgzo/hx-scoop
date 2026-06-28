@@ -5,8 +5,7 @@
     "license": "MIT",
     "notes": "1. Hash code not supplied; 2. Dotnet 9.0 runtime required; 3. config maybe not work, you should backup manually",
     "pre_install": [
-        "Get-ChildItem \"$dir\" -Directory | ForEach-Object { Move-Item -Path \"$($_.FullName)\\*\" -Destination \"$dir\\\" -Force; Remove-Item -Path \"$($_.FullName)\" -Recurse }",
-        "if (!(Test-Path \"$persist_dir\\ExplorerTabUtility.runtimeconfig.json\")) { New-Item -ItemType File -Path \"$dir\\ExplorerTabUtility.runtimeconfig.json\" -Force | Out-Null }"
+        "Get-ChildItem \"$dir\" -Directory | ForEach-Object { Move-Item -Path \"$($_.FullName)\\*\" -Destination \"$dir\\\" -Force; Remove-Item -Path \"$($_.FullName)\" -Recurse }"
     ],
     "architecture": {
         "64bit": {
@@ -21,7 +20,6 @@
     },
     "bin": "ExplorerTabUtility.exe",
     "shortcuts": [["ExplorerTabUtility.exe", "ExplorerTabUtility"]],
-    "persist": "ExplorerTabUtility.runtimeconfig.json",
     "checkver": {
         "github": "https://github.com/w4po/ExplorerTabUtility"
     },

@@ -4,6 +4,10 @@
     "homepage": "https://github.com/w4po/ExplorerTabUtility",
     "license": "MIT",
     "notes": "1. Hash code not supplied; 2. Dotnet 9.0 runtime required",
+    "pre_install": [
+        "Get-ChildItem \"$dir\" -Directory | ForEach-Object { Move-Item -Path \"$_.FullName\\*\" -Destination \"$dir\\\" -Force }",
+        "Get-ChildItem \"$dir\" -Directory | ForEach-Object { Remove-Item -Path \"$_.FullName\" -Recurse }"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/w4po/ExplorerTabUtility/releases/download/v2.5.0/ExplorerTabUtility_v2.5.0_x64_Net9.0_FrameworkDependent.zip"

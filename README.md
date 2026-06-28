@@ -13,10 +13,11 @@ scoop install hx-scoop/<manifestname>
 
 ## Apps
 
-| Names          | Description                                                                | Source                                     |
-| -------------- | -------------------------------------------------------------------------- | ------------------------------------------ |
-| HotCornersWin  | macOS "hot corners" feature for Windows                                    | https://github.com/flexits/HotCornersWin   |
-| easydict_win32 | Easy to look up words or translate text. Windows port of tisfeng/Easydict. | https://github.com/xiaocang/easydict_win32 |
+| Names              | Description                                                                                                            | Source                                     |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| HotCornersWin      | macOS "hot corners" feature for Windows                                                                                | https://github.com/flexits/HotCornersWin   |
+| easydict_win32     | Easy to look up words or translate text. Windows port of tisfeng/Easydict.                                             | https://github.com/xiaocang/easydict_win32 |
+| ExplorerTabUtility | 🚀 Supercharge Windows 11's File Explorer: Auto-convert windows to tabs, duplicate tabs, reopen closed ones, and more! | https://github.com/w4po/ExplorerTabUtility |
 
 ## Fonts
 

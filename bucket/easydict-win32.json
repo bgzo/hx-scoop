@@ -8,15 +8,15 @@
         "64bit": {
             "url": "https://github.com/xiaocang/easydict_win32/releases/download/v0.8.4/easydict_win32-v0.8.4-x64.zip",
             "hash": "sha256:5fbe8f727fa96caf03d7a1281a17579d1771478164182c8cd55b4517ae61f1da"
+        },
+        "arm64": {
+            "url": "https://github.com/xiaocang/easydict_win32/releases/download/v0.8.4/easydict_win32-v0.8.4-arm64.zip",
+            "hash": "sha256:af3b0351c37cd0d195a70ecd46212bab55b99edeb6dd4dbdb58a2c1f912aeedd"
         }
     },
     "bin": "Easydict.WinUI.exe",
-    "shortcuts": [
-        [
-            "Easydict.WinUI.exe",
-            "Easydict.WinUI"
-        ]
-    ],
+    "shortcuts": [["Easydict.WinUI.exe", "Easydict.WinUI"]],
+    "persist": [["%LOCALAPPDATA%\\Easydict", "data\\Easydict"]],
     "checkver": {
         "github": "https://github.com/xiaocang/easydict_win32"
     },
@@ -24,6 +24,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/xiaocang/easydict_win32/releases/download/v$version/easydict_win32-v$version-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/xiaocang/easydict_win32/releases/download/v$version/easydict_win32-v$version-arm64.zip"
             }
         }
     }

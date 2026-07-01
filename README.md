@@ -35,6 +35,7 @@ Versions    https://github.com/ScoopInstaller/Versions         2026/6/28 22:19:1
 
 | Names | Description | Source |
 | ----- | ----------- | ------ |
+| alice-tools | Tools for extracting/editing files from AliceSoft games. | https://github.com/nunuhara/alice-tools |
 | easydict-win32 | Easy to look up words or translate text. Windows port of tisfeng/Easydict. | https://github.com/xiaocang/easydict_win32 |
 | ExplorerTabUtility | 🚀 Supercharge Windows 11's File Explorer: Auto-convert windows to tabs, duplicate tabs, reopen closed ones, and more! | https://github.com/w4po/ExplorerTabUtility |
 | font-noble-scarlet | Backup for windows fonts: Noble Scarlet \| Windows 字体备份：堕朱砂 | https://github.com/bgzo-sandbox/noble-scarlet/ |
